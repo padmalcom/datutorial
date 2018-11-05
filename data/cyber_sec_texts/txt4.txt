@@ -1,0 +1,30 @@
+More than 685 million users may have been exposed to XSS attacks due to a flaw in Branch.io service used by Tinder, Shopify, and many others.
+Security Affairs was the first to publish the news of a DOM-XSS Bug Affecting Tinder, Shopify, Yelp, and other dating application.
+
+The flaws were disclosed a few days ago by the researchers at vpnMentor who explained that an attacker could have been exploited them to access Tinder users’ profiles.
+
+“After initial reconnaissance steps were done, a Tinder domain with multiple client-side security issues was found – meaning hackers could have access to users’ profiles and details.
+
+Immediately after finding these vulnerabilities, we contacted Tinder via their responsible disclosure program and started working with them.” reads the analysis published by vpnMentor.
+
+“We learned that the vulnerable endpoint isn’t owned by Tinder, but by branch.io, an attribution platform used by many big corporations around the globe. The Tinder security team helped us get in touch with them, and accordingly, they’ve put out a timely patch.”
+
+Tinder’s security team immediately launched an investigation and discovered that the go.tinder.com domain was actually an alias for Branch.io-owned custom.bnc.lt.
+
+The Branch.io company provides the leading mobile linking platform, with solutions that unify user experience and measurement across different devices, platforms, and channels.
+
+A large number of major firms uses an alias to point the same custom.bnc.lt,  including Yelp, Western Union, Shopify, RobinHood, Letgo, imgur, Lookout, fair.com and Cuvva, vpnMentor said.
+
+According to vpnMentor, the flaws may have affected as many as 685 million individuals using the vulnerable services.
+
+The DOM-based XSS discovered by the experts would have been easy to exploit in many web browsers, researchers pointed out that Branch.io’s failed to use a Content Security Policy (CSP).
+
+Branch.io flaw
+
+The experts urge users to change their passwords as a precaution.
+
+“Digging deeper, we found out many big websites were sharing the vulnerable endpoint in their code and domains, including Shopify, Yelp, Western Union, and Imgur. This means that as many as 685 million users could be at risk.” continues the experts.
+
+“While the flaw has already been fixed, if you have recently used Tinder or any of the other affected sites, we recommend checking to make sure your account hasn’t been compromised. It’s a good idea to change your password ASAP.”
+
+Additional technical details are included in the analysis published by the experts.

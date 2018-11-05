@@ -1,0 +1,20 @@
+The Security Service of Ukraine (SBU) uncovered a new targeted attack launched by BlackEnergy APT on the IT systems of Ukrainian government entities.
+The Security Service of Ukraine (SBU) uncovered a new targeted attack on the information and telecommunication systems of Ukrainian government entities.
+The SBU attributed the attack to the BlackEnergy Russia-linked APT group.
+“The Security Service of Ukraine has received more evidence of the aggressive actions of Russian intelligence services against Ukraine in cyberspace using a controlled hacker group responsible for carrying out cyberattacks on Ukraine’s critical infrastructure facilities during 2015-2017, known as BlackEnergy and NotPetya,” reads the SBU’s press release.
+
+BlackEnergy made the headlines as the responsible for the massive power outage that occurred in Ukraine in December 2015.
+
+The BlackEnergy malware is a threat improved to target SCADA systems, some variants include the KillDisk component developed to wipe the disks and make systems inoperable.
+
+According to the SBU, BlackEnergy hackers used new samples of malware in a recent series of attack. The new malicious code act as surveillance software, they implement surveillance capabilities and remote administration features.
+
+SBU along with experts from a well-known antivirus company determined that the malware involved in the attack are updated versions of the Industroyer backdoor.
+
+The specialists involved in the investigation helped the Ukraine SBU to attribute the attack and implement mitigations to protect the IT infrastructure of government agencies.
+
+The malware used in the recent attacks borrows the code from the Industroyer as reported by the ukrinform.net. website
+
+“They have a number of similar characteristics, in particular using similar code snippets, computing capabilities of infected systems, etc.” states the ukrinform.net.
+
+Experts from the SBU also observed attackers using hacking tools that were used by the BlackEnergy hackers in previous attacks.

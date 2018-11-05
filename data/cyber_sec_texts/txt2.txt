@@ -1,0 +1,28 @@
+Group-IB: The online market for counterfeit goods in Russia has reached $1,5 billion, while the number of phishing attacks has surpassed 1,200 daily
+Group-IB, an international company that specialises in the prevention of cyber attacks, has estimated that online sales of counterfeit goods are now worth $1.5 billion. This information was first made public by experts from Group-IB’s Brand Protection team at the CyberCrimeCon 2018 international cybersecurity conference.
+
+According to Group-IB, the online market for counterfeit goods in Russia has increased by 23% in a year and totaled more than $1.5 billion in 2017, compared to $1.2 billion in 2016.  Fraudsters use their websites to sell household appliances and computer equipment, clothing and footwear, jewelry, accessories, cosmetics, medicinal products, and much more, often at hugely discounted prices – up to 80% off. According to Group-IB’s statistics, every fifth counterfeit product was bought online. On average, Russians spend $78 per year on counterfeit goods.
+
+“For large organisations, the actions of online fraudsters mean not only a direct loss in revenue, but also damaged customer loyalty, brand abuse, and fewer shoppers,” says Andrey Busargin, Director of Brand Protection at Group-IB. “It also leads to a decrease in what we call the psychological price, i.e. the cost that customers are willing to pay for a product from the official retailer. Around 64% of users stop buying a company’s goods after a negative experience.”
+
+ Counterfeit goods are not the only threat to popular brands on the Internet. Scammers create fake websites of known brands, fraudulent promotional campaigns, and fake accounts on social media. In recent years, an often-used fraud method has been fake mobile applications: 36% of users are unable to distinguish between genuine and fake apps, and 60% of the latter request access to the user’s personal data. 
+
+Fraudsters use various ways to deceive users: phishing websites, fake mobile apps, accounts and groups on social media. Phishing remains one of the most common online fraud. According to the experts from Group-IB Brand Protection, around 1,270 phishing attacks are carried out daily. The main goals of phishing resources are stealing money from bank cards and obtaining login credentials to personal accounts.
+
+Scammers do not simply copy a company’s website, brand, logos, and colors in addition to registering a similar domain name; they also use the same promotional methods as the legal resources. To secure the traffic they need, scammers ensure that their websites appear at the top of search engine results: 96% of users click on links found on the first page displayed by search engines. Only 35% of them are official resources, however.
+
+Contextual advertising also plays a role: for only $15, it is possible to buy 100 guaranteed visits to a phishing website. Scammers also buy banner ads, use search engine optimisation (SEO), and social media promotion (every day, around 150 social media users are deceived by fraudsters on average). In addition to technological ways of attracting traffic by using bots that target opinion leaders, scammers do not shy away from the classic tactic of mass email blasts purporting to be from popular brands, with 20% of users opening emails that contain content that is characteristic of malware or phishing.
+
+Given that users blindly trust influencers (68% of people choose goods or services based on feedback on social media), scammers create fake accounts. For example, a fake account in Pavel Durov’s name brought in more than $50000 in only a couple of hours after being created. According to Group-IB, 43% of celebrities and 31% of politicians have fake accounts that use their names.
+
+“Fighting online fraudsters and counterfeiting requires adopting serious countermeasures,” warns AndreyBusargin.
+
+“We advise companies to continuously track phishing resources and monitor references to their brand in domain name databases, search engine results, social media, messengers, and context ads so as to identify scammers hiding behind the company’s brand. It is also important to monitor mobile applications, in both official and unofficial stores, in addition to forums, search engine results, social media, and websites where they might be found. To effectively fight against scammers and fraudsters, it is important to detect and block all the resources connected with a fraudulent website. Fraudsters usually create several phishing websites at once, which can be detected using correlation and website affiliation analysis.”
+
+About the author Group-IB
+
+Group-IB is one the world’s leading providers of solutions aimed at detection and prevention of cyber attacks, fraud exposure and protection of intellectual property on the Internet. GIB Threat Intelligence cyber threats data collection system has been named one of the best in class by Gartner, Forrester, and IDC.
+
+Group-IB’s technological leadership is built on company’s fifteen years of hands-on experience in cybercrime investigations all over the world and 55 000 hours of cyber security incident response accumulated in the largest forensic laboratory in Eastern Europe and a round-the-clock centre providing a rapid response to cyber incidents—CERT-GIB.
+
+Group-IB is a partner of INTERPOL, Europol, and a cybersecurity solutions provider, recommended by SWIFT and OSCE.

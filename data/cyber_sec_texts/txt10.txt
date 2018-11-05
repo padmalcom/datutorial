@@ -1,0 +1,32 @@
+Security experts from Palo Alto Networks warn of fake Adobe Flash update hiding a miner that works as legitimate update and really update the software.
+A fake Adobe Flash update actually was used as a vector for a malicious cryptocurrency miner, the novelty in this last campaign is represented by the tricks used by attackers to stealthily drop the malware.
+
+The fake Adobe Flash update has been actively used in a campaign since this summer, it borrows the code from the legitimate update and also updates victims’ software, but it also includes the code to download an XMRig cryptocurrency miner on Windows systems.
+
+“However, a recent type of fake Flash update has implemented additional deception. As early as August 2018, some samples impersonating Flash updates have borrowed pop-up notifications from the official Adobe installer.” reads the analysis published by Palo Alto Networks.
+
+“These fake Flash updates install unwanted programs like an XMRig cryptocurrency miner, but this malware can also update a victim’s Flash Player to the latest version.”
+
+fake Adobe Flash update
+
+ 
+
+The fake Adobe Flash updates use file names starting with AdobeFlashPlayer that are hosted on cloud-based web servers that don’t belong to Adobe.
+
+The downloads always include the string “flashplayer_down.php?clickid=” in the URL.
+
+At the time of the report, it is still unclear the way attackers were spreading the URLs delivering the fake Adobe Flash update.
+
+The domain is associated with other updaters or installers pushing cryptocurrency miners and other unwanted software
+
+Network traffic analysis revealed the infected Windows hosts connect to [osdsoft[.]com] via HTTP POST request. This domain was associated with updaters or installers pushing cryptocurrency miners.
+
+“This domain is associated with updaters or installers pushing cryptocurrency miners and other unwanted software. One such example from December 2017 named free-mod-menu-download-ps3.exe also shows osdsoft[.]com followed by XMRig traffic on TCP port 14444 like the example used in this blog.” continues the report.
+
+“However, other malware samples reveal osdsoft[.]com is associated with other unwanted programs usually classified as malware.”
+
+PaloAlto Networks experts highlighted that potential victims will still receive warning messages about running downloaded files on their Windows computer.
+
+“This campaign uses legitimate activity to hide distribution of cryptocurrency miners and other unwanted programs,” concludes the analysis.
+
+ “Organizations with decent web filtering and educated users have a much lower risk of infection by these fake updates.

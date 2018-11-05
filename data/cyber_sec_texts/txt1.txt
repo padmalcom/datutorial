@@ -1,0 +1,20 @@
+Security experts from Palo Alto Networks have collected evidence that links the recently discovered NOKKI malware to North Korea-Linked APT.
+Researchers from Palo Alto Networks have spotted a new variant of the KONNI malware, tracked as NOKKI. that was attributed to North Korea-linked attackers.
+NOKKI borrows the code from the KONNI malware, the latter is a remote access Trojan (RAT) used in targeted attacks on organizations linked to North Korea, while NOKKI was used to target politically-motivated victims in Eurasia and Southeast Asia.
+“KONNI,” was undetected for more than 3 years, it was able to avoid detection due to a continuous evolution, the recent versions capable of executing arbitrary code on the target systems and stealing data.
+The NOKKI variant has been in use since at least January 2018, experts attributed it to the Reaper group.
+“Beginning in early 2018, Unit 42 observed a series of attacks using a previously unreported malware family, which we have named ‘NOKKI’.” reads the analysis published by the Palo Alto Networks.
+“The malware in question has ties to a previously reported malware family named KONNI, however, after careful consideration, we believe enough differences are present to introduce a different malware family name. To reflect the close relationship with KONNI, we chose NOKKI, swapping KONNI’s Ns and Ks.”
+NOKKI is able to gather a broad range of data (i.e. IP address, Hostname, Username, Drive Information, Operating System Information, Installed Programs) from the infected systems, it is also able to fetch and execute a payload, as well as to drop and open decoy documents.
+The malicious code writes the collected information to LOCALAPPDATA%\MicroSoft Updatea\uplog.tmp.
+In January, the researchers observed several attacks involving the NOKKI malware that targeted Cambodian speakers with an interest in Cambodian political matters and Russia with documents written Cyrillic featuring content related to local political issues.
+A few days ago, researchers from Palo Alto Networks published another report that associated the NOKKI malware with the DOGCALL backdoor attributed to the Reaper group.
+The analysis of the macros included in the Microsoft Word decoy documents revealed that they were designed to drop the NOKKI malware, they employed a deobfuscation technique that was also used in documents targeting individuals interested in the World Cup hosted in Russia in 2018 with the DOGCALL malware.
+“Based on the original filename, we can surmise this malware sample targeted individuals interested in the World Cup hosted in Russia in 2018. As we can see in the figure below, the unique deobfuscation routine used between the samples is identical, including the comments included by the author.” reads the report published by Palo Alto Networks.
+NOKKI vs WordCup malware
+“While the deobfuscation routine was identical, the actual functionality of the macro differed slightly. The NOKKI dropper samples downloaded both a payload and a decoy document, but this World Cup predictions malware sample downloads and executes a remote VBScript file wrapped in HTML and appends text to the original Word document to provide the lure for the victim.”
+The VBScript file used the same deobfuscation routine and fetches and executes a dropper tracked as Final1stspy that in turn downloads a strain of the DOGCALL malware.
+The malware implements backdoor features, can take screenshots, log keystrokes, enable the microphone, collect victim information, collect files of interest, and download and execute additional payloads.
+The malware connects the command and control (C&C) via third-party hosting services such as Dropbox, pCloud, Yandex Cloud, and Box.
+“What originally began as research surrounding a new malware family named NOKKI that had code overlap and other ties to KONNI lead us to an interesting discovery tying the NOKKI malware family to the Reaper threat actor group.” Palo Alto Networks concludes.
+“Additionally, we discovered yet another malware family that has not been previously publicly reported that we have named Final1stspy,” 

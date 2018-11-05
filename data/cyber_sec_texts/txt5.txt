@@ -1,0 +1,32 @@
+A Russian-speaking hacker, who goes by the name of Alexey, claims to have hacked into over 100,000 MikroTik routers with a specific intent, disinfect them.
+Earlier August, experts uncovered a massive crypto jacking campaign that was targeting  MikroTik routers to inject a Coinhive cryptocurrency mining script in the web traffic.
+
+The campaign started in Brazil, but it rapidly expanded to other countries targeting MikroTik routers all over the world, over 200,000 devices were compromised.
+
+In September thousands of unpatched MikroTik Routers were involved in new cryptocurrency mining campaigns.
+
+Threat actors also exploited the exploit code for the CVE-2018-14847 vulnerability in MikroTik routers to recruit them in botnets such as Mirai and VPNFilter.
+
+Alexey is a Russian-speaking cyber vigilante that decided to fix the MikroTik routers and he claims to be e system administrator.
+
+Alexey described his activity on a Russian blogging platform, he explained he hacked into the routers to change settings and prevent further compromise.
+
+“I added firewall rules that blocked access to the router from outside the local network,” Alexey wrote.
+
+“In the comments, I wrote information about the vulnerability and left the address of the @router_os Telegram channel, where it was possible for them to ask questions.”
+
+Alexey changed settings for over 100,000 users, but only 50 users contacted his via Telegram but of them were angry for the intrusion.
+
+According to the researcher Troy Mursch, currently, there are over 420,000 MikroTik routers exposed only that have been abused in cryptocurrency-mining campaigns.
+
+MikroTik routers continue to be under attack, and the situation is getting worse because of the availability of a new PoC code.
+
+The new attack technique was recently discovered by experts at Tenable Research and it could be exploited by remote attackers to execute arbitrary code on the vulnerable devices.
+
+The experts at Tenable Research presented the technique on October 7 at DerbyCon 8.0 during the talk “Bug Hunting in RouterOS” at Derbycon, it leverages a known directory traversal flaw tracked as CVE-2018-14847.
+
+Mikrotik routers vulnerable
+
+Just to be clear, despite Alexey has broken into the infected routers to sanitize them, this action is technically considered a cybercrime.
+
+The bad aspect of the story is that even if security patches have been available for months, ISPs and owners of the home routers still have installed them.

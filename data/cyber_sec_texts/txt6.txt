@@ -1,0 +1,38 @@
+Experts from 0Patch revealed that the Microsoft Zero-Day Patch for JET Database Engine vulnerability (CVE-2018-8423) is incomplete.
+The vulnerability was discovered by the researcher Lucas Leong of the Trend Micro Security Research team that publicly disclosed an unpatched zero-day vulnerability in all supported versions of Microsoft Windows.
+
+The flaw is an out-of-bounds (OOB) write in the JET Database Engine that could be exploited by a remote attacker to execute arbitrary code on the vulnerable systems.
+
+The zero-day vulnerability has received CVSS score of 6.8 and resides in the management of indexes in JET. An attacker can use specially crafted data in a database file to trigger a write past the end of an allocated buffer.
+
+Experts highlighted that the exploitation of the flaw requires user interaction, the attackers have to trick victims into opening a malicious file that would trigger the bug.
+
+The specially crafted file has to contain data stored in the JET database format.
+
+Lucas Leong reported the flaw to Microsoft in early May 2018, he expected the flaw would have been fixed with the September 2018 Patch Tuesday set of security updates, but Microsoft did not fix it.
+
+“Today, we are releasing additional information regarding a bug report that has exceeded the 120-day disclosure timeline” stated the blog post published by ZDI.
+
+“An out-of-bounds (OOB) write in the Microsoft JET Database Engine that could allow remote code execution was initially reported to Microsoft on May 8, 2018. An attacker could leverage this vulnerability to execute code under the context of the current process, however it does require user interaction since the target would need to open a malicious file. As of today, this bug remains unpatched.”
+
+zero-day
+
+At the end of September, 0patch community released an unofficial patch for the Microsoft JET Database Engine zero-day vulnerability disclosed by Trend Micro’s Zero Day Initiative-
+
+Last week Microsoft addressed the flaw as part of its Patch Tuesday updates.
+
+0patch now issued another micropatch to correct the official Microsoft patch that according to the experts is incomplete.
+
+The root cause of the problem resides in the Window’s core dynamic link libraries “msrd3x40.dll.”
+
+“As expected, the update brought a modified msrd3x40.dll binary: this is the binary with the vulnerability, which we had micropatched with four CPU instructions (one of which was just for reporting purposes).” wrote Mitja Kolsek, a researcher with the 0patch team.
+
+“The version of msrd3x40.dll changed from 4.0.9801.0 to 4.0.9801.5 and of course its cryptographic hash also changed – which resulted in our micropatch for this issue no longer getting applied to msrd3x40.dll.”
+
+Experts pointed out that the official patch doesn’t fix the vulnerability, but only limited it. The micropatch works on fully updated 32-bit and 64-bit Windows 10, Windows 8.1, Windows 7, Windows Server 2008 and Windows Server 2012, as well as other Windows versions that share the same version of msrd3x40.dll.
+
+“So we BinDiff-ed the patched msrd3x40.dll to its vulnerable version and reviewed the differences. At this point we will only state that we found the official fix to be slightly different to our micropatch, and unfortunately in a way that only limited the vulnerability instead of eliminating it.” continues Kolsek.
+
+“We promptly notified Microsoft about it and will not reveal further details or proof-or-concept until they issue a correct fix.”
+
+0patch reported the problem to Microsoft and it plans to publish the official proof-of-concept code after the tech giant will fix it.

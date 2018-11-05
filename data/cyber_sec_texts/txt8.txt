@@ -1,0 +1,48 @@
+Security expert published the PoC exploit code for the recently fixed critical remote code execution flaw in Edge web browser tracked as CVE-2018-8495.
+The October 2018 Patch Tuesday addressed 50 known vulnerabilities in Microsoft’s products, 12 of them were labeled as critical. One of the issues is a critical remote code execution vulnerability in Edge web browser tracked as CVE-2018-8495.
+
+“A remote code execution vulnerability exists when Windows Shell improperly handles URIs, aka “Windows Shell Remote Code Execution Vulnerability.” This affects Windows Server 2016, Windows 10, Windows 10 Servers.” reads the description for the flaw.
+
+The security researcher Abdulrahman Al-Qabandi who discovered the flaw, was investigating the way it is possible to launch the default mail client from the browser by clicking on a URL that looks like ‘mailto:test@test.test‘.
+
+Once clicked on the link in Microsoft Edge browser, a prompt will be displayed to the user whether to switch applications.
+
+The expert examined the simple response to the ‘mailto’ URI scheme in Microsoft Edge and noticed that Outlook would launch with a certain parameter.
+
+Microsoft Edge RCE 1
+
+By searching for executables that accepted user-defined commands in Windows Registry, the expert found Windows Script Host (‘WScript.exe’), which can execute scripts in multiple languages.
+
+“A URI scheme that passes user tainted arguments directly to
+'WScript.exe'
+. In case you don’t know: “Windows Script Host provides an environment in which users can execute scripts in a variety of languages that use a variety of object models to perform tasks.” Let’s see what happens if a user navigates to ‘wshfile:test’ from Edge.” states the expert.
+
+The expert tested the URI scheme ‘wshfile:test‘ in Microsoft Edge, the underlying operating system asks the user for an app to handle the procedure and Windows Script Host (WSH) is the default handler.
+
+Al-Qabandi attempted to execute file located in a certain patch he passed to ‘WScript.exe,’ for example ‘C:\WINDOWS\system32\wshfile:test’, but it does not exist.
+
+He discovered that it was the possibility to use a path traversal trick the would have WSH load a VBScript from an arbitrary location.
+
+“Awesome! We can now point to any file in any directory and so long as we can drop a file in a predictable location, we will have RCE,” the researcher explained. 
+
+“But that is easier said than done, looked like most if not all cached files from Edge go into a salted directory location. In other words, we could plant files but we can’t predict their location. “
+
+To predict the location of the files planted in the system the expert used findings of a previous research by Matt Nelson that showed how to do it using a particular signed VBScript that suffered from “WSH Injection.”
+
+Al-Qabandi’s searched for every single VBS file in Windows that accepts any parameters like ‘SyncAppvPublishingServer.vbs.’
+
+'C:\Windows\WinSxS\amd64_microsoft-windows-a..nagement-appvclient_31bf3856ad364e35_10.0.17134.48_none_c60426fea249fc02\SyncAppvPublishingServer.vbs'
+it can also execute commands via PowerShell without filtering them.
+
+The user will only see the result of the command because PowerShell runs in hidden mode (command line argument ‘-WindowStyle Hidden’).
+
+“This specific script takes in a few arguments and passes them into a powershell.exe shell execution without filtering it, allowing us to inject arbitrary commands.” continues the expert.
+
+psCmd = "powershell.exe -NonInteractive -WindowStyle Hidden -ExecutionPolicy RemoteSigned -Command &{" & syncCmd & "}"
+“And we can influence the value of ‘syncCmd‘ but not only that, Edge also does not sanitize quotation marks, so we can pass as many parameters to ‘WScript.exe’ as we want. Again, conveniently this powershell will run hidden as indicated by ‘-WindowStyle Hidden’ which makes this a perfect WSH injection vector”
+
+Al-Qabandi published a proof-of-concept (PoC) script for the Microsoft Edge Remote Code Execution vulnerability.
+
+Microsoft Edge RCE 2.png
+
+He reported the poc code privately to Microsoft through Trend Micro’s Zero Day Initiative program, below a video PoC shared by the expert with BleepingComputer.
